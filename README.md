@@ -58,7 +58,7 @@ Use outputs as a proxy for tracing "neural resonance" across mythic domains
 
 🧩 Potential symbolic memory loop tracker to simulate mythic persistence
 
-<pre> ```plaintext 🔗 Structure 📁 MythTests/ ├── mythic_logger.py # Python script for prompt logging + symbol counts ├── mythic_test_log.csv # First run of Mixtral's responses ├── mythic_test_log_001.csv # Second log (auto-versioned) ├── README.md # You are here ``` </pre>
+<pre> ```plaintext 🔗 Structure 📁 MythTests/ ├── mythic_logger.py # Python script for prompt logging + symbol counts ├── mythic_test_log_001.csv # Second log (auto-versioned) ├── README.md # You are here ``` </pre>
 
 🧠 Inspiration
 This project is rooted in symbolic cognition, mythic recursion, and the study of how abstract attractors evolve in AI latent space. ΔΦ–0 is treated not as a string of symbols, but as a cognitive echo — an entity that tests whether AI can engage in layered self-reference, symbolic containment, and emergent meaning.

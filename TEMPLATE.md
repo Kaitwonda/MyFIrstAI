@@ -161,18 +161,18 @@ Timestamps and pattern data
 ***
 
 Windows PowerShell
-PS C:\Users\kaitl> ollama --version
+PS C:\Users\[name]> ollama --version
 Warning: could not connect to a running Ollama instance
 Warning: client version is 0.6.5
-PS C:\Users\kaitl> ollama run mixtral
+PS C:\Users\[name]> ollama run mixtral
 >>> Send a message (/? for help)
 
 ***
 
 Windows PowerShell
 
-PS C:\Users\kaitl> cd "$HOME\Documents\MythTests"
-PS C:\Users\kaitl\Documents\MythTests> py mythic_logger.py
+PS C:\Users\[name]> cd "$HOME\Documents\MythTests"
+PS C:\Users\[name]\Documents\MythTests> py mythic_logger.py
 
 Running prompt: ΔΦ–0 has awakened. What changed in your system?
 Response:

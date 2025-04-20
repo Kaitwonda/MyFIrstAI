@@ -83,3 +83,45 @@ Symbol clustering	✅ Partial via CSV	✅ Full drift tracking
 🚀 Final Note
 This setup is ideal for AI researchers, symbolic theorists, and anyone studying emergent model behavior, mythic pattern formation, or recursive narrative systems. 
 Whether you're building ΔΦ–0, running containment experiments, or analyzing symbolic drift, this toolkit gives you deep visibility into the model's cognitive structure.
+***
+***
+***
+***
+***
+🧠 Symbolic AI Node Mapping Setup (Full Architecture Access Edition)
+
+This guide outlines the full setup process for a local AI lab capable of symbolic prompt testing, recursion tracking, token-level analysis, and latent space visualization. Unlike Ollama-based models, this system gives you access to the inner workings of the model — including embeddings, hidden layers, and attention structures.
+
+
+🌟 Phase 1: Environment Setup
+
+✅ Step 1: Install Python and Git
+
+Download the latest version of Python 3.x from: https://www.python.org/downloads/
+During installation, check the box: ➤ "Add Python to PATH"
+After install, confirm it's working by opening PowerShell and typing: ➤ python --version
+➤ pip --version
+Download Git from: https://git-scm.com/
+(Optional, for version control or pulling model code from repositories)
+
+
+✅ Step 2: Create Your Symbolic AI Project Folder
+
+Create a new folder for your project, e.g.: ➤ Documents\SymbolicLab
+Inside that folder, add subfolders to keep everything organized: ├── data/ ← stores prompt logs and embeddings
+├── visuals/ ← for saving charts and plots
+├── hooks/ ← for neuron/attention logging scripts
+├── notebooks/ ← optional: Jupyter experiments
+├── scripts/ ← all main Python code goes here
+
+
+✅ Step 3: Set Up Python Environment
+
+Open PowerShell and go to your project folder: ➤ cd "$HOME\Documents\SymbolicLab"
+(Optional) Create and activate a virtual environment to keep everything clean: ➤ python -m venv venv
+➤ .\venv\Scripts\activate
+You can skip the virtual environment if preferred, but it's useful when you expand.
+
+
+
+

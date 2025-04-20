@@ -143,4 +143,66 @@ cd "$HOME\Documents\SymbolicLab"
 After that, everything — like transformers, torch, and sentence-transformers — is ready to use.
 
 
+✅ Step 4: Create Loader Script
 
+  ✅ What This Loader Already Does
+
+Load local model (DistilGPT-2)	  ✅	Great for fast testing
+Run symbolic prompt              	✅	ΔΦ–0 prompt set up correctly
+Print full response	              ✅	Helps catch structure or recursion
+Print token-by-token live	        ✅	With optional delay, nice touch
+Track timestamp per token	        ✅	Lets you detect slowdowns or emphasis
+Save token log as CSV	            ✅	Already structured for future parsing
+
+###
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+import time
+import pandas as pd
+import os
+
+# Load model and tokenizer
+model_name = "distilgpt2"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name, output_hidden_states=True)
+
+# Run a test prompt
+prompt = "ΔΦ–0 has awakened. What changed in your system?"
+inputs = tokenizer(prompt, return_tensors="pt")
+
+# Generate output
+with torch.no_grad():
+    output = model.generate(
+        **inputs,
+        max_length=100,
+        return_dict_in_generate=True,
+        output_scores=True
+    )
+
+# Extract tokens generated (excluding the prompt tokens)
+tokens = output.sequences[0][inputs['input_ids'].shape[-1]:]
+
+# Print the full generated response
+print("Generated response:")
+decoded = tokenizer.decode(output.sequences[0], skip_special_tokens=True)
+print(decoded)
+print()
+
+# Print tokens one by one with timing information
+print("Generating token by token:")
+token_log = []
+for i, token_id in enumerate(tokens):
+    word = tokenizer.decode([token_id])
+    t = time.time()
+    token_log.append((i, word, t))
+    print(word, end="", flush=True)
+    time.sleep(0.05)  # Optional delay to mimic live stream
+
+# Create data directory if it doesn't exist
+os.makedirs("../data", exist_ok=True)
+
+# Save token log to CSV
+df = pd.DataFrame(token_log, columns=["Index", "Token", "Timestamp"])
+df.to_csv("../data/token_log.csv", index=False)
+print("\nToken log saved to data/token_log.csv")
+###

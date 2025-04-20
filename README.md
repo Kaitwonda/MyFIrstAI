@@ -38,7 +38,7 @@ Built to be modular and reusable for any causal language model.
 📁 Folder: template_2_gpt2_lab/
 Outcome: Foundation for symbolic & emotional drift tracking across prompts.
 
-✅ Template 3: Garage-Built OpenAI (Fullstack LLM Toolkit)
+✅ Template 3: Garage-Built Open LLM Framework (Fullstack LLM Toolkit)
 Build your own full symbolic cognition testbed.
 
 Goal: Load large-scale open-source models (Mistral 7B, NeoX 20B, LLaMA 2) with full architectural control

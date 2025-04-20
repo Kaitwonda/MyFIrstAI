@@ -121,7 +121,30 @@ Open PowerShell and go to your project folder: ➤ cd "$HOME\Documents\SymbolicL
 (Optional) Create and activate a virtual environment to keep everything clean: ➤ python -m venv venv
 ➤ .\venv\Scripts\activate
 You can skip the virtual environment if preferred, but it's useful when you expand.
+🧠 Do You Need to Reinstall Everything in a Virtual Environment Each Time?
+No, you don’t need to reinstall the packages every time.
 
+A virtual environment (venv) just:
+
+Creates an isolated folder for packages and Python binaries
+
+Keeps your symbolic lab separate from other projects or system-wide Python installs
+
+Once you install packages inside it once, they stay installed as long as that venv folder exists.
+
+✅ What You Do Need to Do Each Time
+Just reactivate the environment when you open a new terminal or PowerShell window.
+
+If your environment is in:
+
+Documents\SymbolicLab\venv
+
+Then every time you return, run:
+
+cd "$HOME\Documents\SymbolicLab"
+.\venv\Scripts\activate
+
+After that, everything — like transformers, torch, and sentence-transformers — is ready to use.
 
 
 

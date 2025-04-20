@@ -206,3 +206,30 @@ df = pd.DataFrame(token_log, columns=["Index", "Token", "Timestamp"])
 df.to_csv("../data/token_log.csv", index=False)
 print("\nToken log saved to data/token_log.csv")
 ###
+
+✅ Step 5: Install Dependencies and Run the Loader
+This step installs the required AI libraries and runs your symbolic prompt loader script.
+
+📦 5.1 Install Python Libraries
+Open PowerShell and run the following command to install all required packages:
+pip install transformers sentence-transformers matplotlib scikit-learn
+
+  These packages enable:
+  transformers – load and run local language models
+  sentence-transformers – generate and compare embeddings
+  matplotlib and scikit-learn – visualize symbolic drift and clustering
+
+▶️ 5.2 Run the Token-Level Loader Script
+Navigate to the folder where your script is saved:
+cd "$HOME\Documents\SymbolicLab\scripts"
+py load_model.py
+
+  This script:
+  Sends a symbolic prompt to the model
+  Streams the response token by token
+
+  Logs each token and timestamp
+  Saves the results to:
+  Documents\SymbolicLab\data\token_log.csv
+  Make sure your script file is correctly named (load_model.py) and saved inside the scripts folder.
+

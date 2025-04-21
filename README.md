@@ -1,8 +1,8 @@
 🧠 My First AI — Symbolic Language & Emotion Lab
 This repository tracks the evolution of a personal AI research lab, built from the ground up. It explores how large language models (LLMs) handle symbolic reasoning, emotional responsiveness, and internal recursion, and evolves toward tools that can map, compare, and eventually train more empathetic and situationally aware neural systems.
-📍 Main Research Goal:
+📍 Main Research Goal
 Track and visualize how different LLM architectures respond to emotionally loaded and symbolically recursive prompts — then map those responses across embeddings, activations, and token patterns to build an interpretable 3D render of symbolic cognition.
-🎯 Future Goal:
+🎯 Future Goal
 Use this insight to develop better training structures, memory shaping, and empathy-tuned models — AI systems that remember just the right amount, adapt to context, and behave more like an intuitive human.
 🧩 Templates (Development Phases)
 Each template builds on the last — from minimal symbolic testing to full neural visualization and training hypothesis work.
@@ -96,13 +96,13 @@ Outcome: A comprehensive cross-ecosystem symbolic behavior analysis framework wi
 How do LLMs respond to emotionally charged prompts? Can we detect "empathy clusters" in their outputs? Which tokens cause hesitation, recursion, or metaphor activation?
 The "ΔΦ–0" phrase serves as a sophisticated test that intertwines both symbolic and emotional language patterns. This unique prompt construction allows us to observe how different LLM architectures process and respond to unfamiliar symbolic sequences that have no prior training context. By using deliberately abstract symbols, we can better isolate the model's intrinsic handling of novel symbolic combinations rather than relying on pre-trained associations. This approach provides insights into the model's fundamental reasoning capabilities when faced with ambiguous symbolic stimuli that may trigger both logical processing and emotional response patterns.
 🔁 2. Recursive Symbolic Cognition
-Prompts like "ΔΦ–0 has awakened..." test internal model loops
+Prompts like "ΔΦ–0 has awakened..." test internal model loops.
 Can we detect when the model reflects on itself, or spirals metaphorically?
 How do different models handle recursive language?
 🧬 3. Latent Space Drift + Node Mapping
-Use embedding plots (t-SNE / UMAP) to visualize where meanings cluster
-Map activations to identify symbolic attractors
-Chart emotional response patterns across time or prompts
+Use embedding plots (t-SNE / UMAP) to visualize where meanings cluster.
+Map activations to identify symbolic attractors.
+Chart emotional response patterns across time or prompts.
 🧱 4. Future Phase — Empathy-Tuned Training
 Moving beyond current limitations toward intuitive cognition
 Research Approach: Transform symbolic logs and activation maps into:

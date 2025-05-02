@@ -314,4 +314,175 @@ Maintain flexibility for future expansion (multimodal, offline, fine-tuned varia
 
 
 
+Title: DeltaPhi-0: A Ground-Up Symbolic AI Framework for Emergent Memory and Conceptual Reasoning
+
+Abstract: This paper outlines the architectural design, goals, and development phases of a novel symbolic AI system, constructed entirely from scratch without reliance on pre-trained language models. The system, codenamed DeltaPhi-0, is engineered to build and evolve a symbolic attractor network through live internet learning, user-guided memory formation, and recursive abstraction. The long-term objective is to emulate mythic-symbolic cognition and emotional contextual memory without sacrificing transparency, controllability, or interpretability. This document serves as a foundational blueprint for implementation.
+
+
+---
+
+1. Objectives and Innovations
+
+1. Symbolic Storage: Store all learned information as symbolic attractors, including emotional tone, archetypal shape, physical referents, oppositions, and recursion paths.
+
+
+2. Self-Modifying Symbol Network: Dynamically evolve the memory structure based on new information, usage frequency, and symbolic connectivity.
+
+
+3. Local Computation: Function entirely on consumer-grade hardware (4070 Super, 32GB RAM, 500GB SSD) without cloud-based models.
+
+
+4. Internet Learning: Continuously ingest and abstract information from the internet, converting it into symbolic nodes and relationships.
+
+
+5. Emergence Simulation: Model recursive and emergent symbolic behaviors that lead to novel archetypes, composite structures, and internal myths.
+
+
+6. User Interaction: Let the user log memories manually, instruct the AI when to save, and view symbolic pathways of memory retrieval.
+
+
+7. Visualization: 3D force-directed graph of symbols and memory flows with emotional and structural weights.
+
+
+
+
+---
+
+2. Architecture Overview
+
+Frontend: CLI or Flask-based UI with text input, memory commands, and graph viewing.
+
+Core Engine: Custom Python symbolic processor with:
+
+Token-weight system for concept prioritization
+
+Emotion mapping using Plutchik wheel
+
+Archetype inference from shape, context, and polarity
+
+
+Memory System:
+
+Symbol graph stored in JSON or SQLite
+
+Neo4j integration planned for MVP2
+
+Separate logs for user memories vs. scraped inputs
+
+
+Web Crawler:
+
+Ethical scraper (trafilatura, readability-lxml)
+
+Filters for trust score, readability, and symbolic relevance
+
+
+
+
+---
+
+3. Symbol Object Format
+
+{
+  "symbol": "○",
+  "core_meanings": ["sun", "cycle", "wholeness"],
+  "linked_symbols": ["0", "∞", "O"],
+  "emotions": ["trust", "peace"],
+  "archetypes": ["feminine", "eternal"],
+  "physical_refs": ["halo", "wheel"],
+  "opposites": ["□", "∧"],
+  "resonance_weight": 0.89,
+  "context_links": ["rebirth", "dream", "cosmos"]
+}
+
+
+---
+
+4. Development Phases
+
+Phase 1: Core Symbol Engine (Week 1-2)
+
+Build symbolic object format
+
+Implement JSON-based graph structure
+
+Create symbol lookup and similarity matching system
+
+
+Phase 2: Manual User Memory System (Week 3)
+
+Let user log a symbol and its meanings manually
+
+Build command parser for saving, retrieving, and linking memory
+
+Add timestamping and usage frequency
+
+
+Phase 3: Web Learning & Auto-Symbolizer (Week 4-5)
+
+Implement web crawler with keyword topic focus
+
+Parse and extract noun-verb-adjective structures
+
+Convert abstracted chunks into symbolic entries with linked tokens
+
+
+Phase 4: Visualization Layer (Week 6)
+
+Export graph data for three.js or Plotly rendering
+
+Color nodes by emotion, size by usage weight
+
+Add real-time updates via CLI or local server
+
+
+Phase 5: Recursive Abstraction & Emergence (Week 7+)
+
+Introduce feedback loop for pattern collapse and novel composite creation
+
+Add entropy and convergence tracking to score emergent ideas
+
+Simulate symbolic myth loops based on user queries
+
+
+
+---
+
+5. Hardware & Storage Budgeting
+
+Total Max Runtime Memory: ~10GB (Graph + Logs + Processing Buffers)
+
+User Memory Allocation: 2GB
+
+Internet Cache: 8GB (rotating, compressed)
+
+Graph Depth Target: ~5,000 symbols for MVP
+
+
+
+---
+
+6. Use Cases & Testing
+
+Prompt: "Why is fire linked to rebirth?"
+
+Output: Trace "fire" → "destruction" → "cleansing" → "rebirth"
+
+
+Prompt: "Save my fear of abandonment"
+
+Creates symbol node: "abandonment" with emotion: "fear", linked to "isolation", "childhood"
+
+
+Prompt: "Show symbol map"
+
+Opens live 3D graph viewer
+
+
+
+
+---
+
+7. Conclusion This system will offer a ground-up alternative to transformer-based models. If successful, it will be among the first self-generating, symbolic attractor AIs capable of recursive learning and mythic emergence without any foundational LLM dependencies. This paves the way for highly interpretable, emotionally-aware cognition frameworks and neuro-symbolic research tools.
+
 

@@ -110,6 +110,33 @@ Hybrid orchestration of **local and cloud** LLMs (Claude, GPT-4, Mistral) for st
 
 ---
 
+### 🧪 Template 5: Bank Assistant AI — Symbolic Flow Control Prototype
+
+**Goal:**
+Develop a lightweight, emotionally responsive AI assistant designed to streamline internal corporate workflows—particularly in environments with complex chains of command and frequent technical issues. This assistant aims to support, not replace, existing employees by providing efficient and friendly assistance.
+
+**Setup:**
+
+* **Hardware:** 16GB RAM minimum
+* **Software:** Python 3.8+, Ollama Framework, LLaMA 2 (7B) via Ollama
+
+**Features:**
+
+* Conversational tone that adapts to user frustration levels
+* Handles queries related to tech issues, update schedules, and reporting hierarchies
+* Mock environment simulating bank infrastructure, including:
+
+  * Theoretical servers
+  * Fake third-party integrations
+  * Simulated biometric connections
+
+**Status:**
+🚧 In Development
+
+📁 Folder: `template_5_bank_assistant/`
+
+---
+
 ## 🧠 Core Research Areas
 
 | Research Focus | Description |
